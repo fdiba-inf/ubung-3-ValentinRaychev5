@@ -9,9 +9,9 @@ public class NumberCounter {
     Scanner input = new Scanner(System.in);
 
     double sum = 0;
-    double positiveCount = 0;
-    double negativeCount = 0;
-    double number = input.nextInt();;
+    int positiveCount = 0;
+    int negativeCount = 0;
+    int number = input.nextInt();;
 
     while(number != 0)  {
 
@@ -28,7 +28,7 @@ public class NumberCounter {
     number = input.nextInt();
     }
 
-    double average = sum / (positiveCount + negativeCount);
+    double average = 0.0 + (sum / (positiveCount + negativeCount));
 
     System.out.println("Positive numbers: " + positiveCount);
     System.out.println("Negative numbers: " + negativeCount);
