@@ -8,8 +8,7 @@ public class NamePrinter {
         Scanner input = new Scanner(System.in);
         
         String name = input.next();
-        int current = name.length();
-        for(int i = 0; i <= current; i++) {
+        for(int i = 0; i < name.length(); i++) {
           char letter = name.charAt(i);
           System.out.println("* " + letter + " *");
         }
