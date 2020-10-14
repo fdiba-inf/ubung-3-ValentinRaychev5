@@ -11,7 +11,7 @@ public class NumberCounter {
     double sum = 0;
     int positiveCount = 0;
     int negativeCount = 0;
-    int number = input.nextInt();;
+    int number = input.nextInt();
 
     while(number != 0)  {
 
