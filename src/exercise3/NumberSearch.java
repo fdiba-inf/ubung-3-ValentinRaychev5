@@ -9,12 +9,12 @@ public class NumberSearch {
         int count = 0;
         for(int i = 100; i < 1001; i++) {
           if(i % 30 == 0)  {
-            System.out.print(i + " ");
-            count++;
             if (count == 10)  {
-              System.out.println();
+              System.out.print("\n");
               count = 0;
             }
+            System.out.print(i + " ");
+            count++;
           }
         }
 
