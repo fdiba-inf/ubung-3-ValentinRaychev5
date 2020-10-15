@@ -19,6 +19,7 @@ public class Triangle {
           if(a < (b + c) && b < (c + a) && c < (a + b)) {
             if(a==b && b==c)  {
               type = "equilateral";
+              Area = (Math.sqrt(3) * a * a) / 4;
               System.out.println("Area: " + Area);
               System.out.println("Triangle: " + type);
             }
