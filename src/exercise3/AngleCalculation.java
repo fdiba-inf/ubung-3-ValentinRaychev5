@@ -13,18 +13,16 @@ public class AngleCalculation {
           if(type == 'r') {
             double degree = number * (180 / Math.PI);
             System.out.println("Angle: " + degree + "d");
-            number = input.nextInt();
-            type = input.next().charAt(0);
           }
           else if (type == 'd')  {
             double radian = number * (Math.PI / 180.0);
             System.out.println("Angle: " + radian + "r");
-            number = input.nextInt();
-            type = input.next().charAt(0);
           }
           else {
             break;
           }
+          number = input.nextInt();
+          type = input.next().charAt(0);
             
         }
         
