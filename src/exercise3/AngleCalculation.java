@@ -6,7 +6,7 @@ public class AngleCalculation {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        double number = input.nextInt();
+        double number = input.nextDouble();
         char type = input.next().charAt(0);
         while(type == 'd' || type == 'r') {
 
@@ -21,7 +21,7 @@ public class AngleCalculation {
           else {
             break;
           }
-          number = input.nextInt();
+          number = input.nextDouble();
           type = input.next().charAt(0);
             
         }
