@@ -10,15 +10,15 @@ public class AngleCalculation {
         char type = input.next().charAt(0);
         while(type == 'd' || type == 'r') {
 
-          if(type == 'd') {
-            number = number * 180 / Math.PI;
-            System.out.print("Angle: " + number + "d");
+          if(type == 'r') {
+            double degree = number * (180 / Math.PI);
+            System.out.println("Angle: " + degree + "d");
             number = input.nextInt();
             type = input.next().charAt(0);
           }
-          else if (type == 'r')  {
-            number = (number * Math.PI) / 180.0;
-            System.out.print("Angle: " + number + "r");
+          else if (type == 'd')  {
+            double radian = number * (Math.PI / 180.0);
+            System.out.println("Angle: " + radian + "r");
             number = input.nextInt();
             type = input.next().charAt(0);
           }
