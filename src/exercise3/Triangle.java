@@ -16,7 +16,7 @@ public class Triangle {
         double Area = Math.sqrt(sSmall*(sSmall * (sSmall - a) * (sSmall - b) * (sSmall - c)));
 
         do  {
-          if(a < b + c || b < c + a || c < a + b) {
+          if(a < (b + c) && b < (c + a) && c < (a + b)) {
             if(a==b && b==c)  {
               type = "equilateral";
               System.out.println("Area: " + Area);
