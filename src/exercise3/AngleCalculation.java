@@ -11,6 +11,7 @@ public class AngleCalculation {
         while(type == 'd' || type == 'r') {
 
           if(type == 'd') {
+            number = number * 180 / Math.PI;
             System.out.print("Angle: " + number + "d");
             number = input.nextInt();
             type = input.next().charAt(0);
